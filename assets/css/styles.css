@@ -81,6 +81,13 @@ a {
     background: #152427;
 }
 
+.line-clamp {
+    display: -webkit-box;
+    -webkit-line-clamp: var(--line-clamp, 1);
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 /* ============= Header ============= */
 .header {
     position: sticky;
@@ -477,3 +484,231 @@ a {
     font-weight: 500;
     line-height: 2.4rem;
 }
+
+/* ============= About Us ============= */
+.about {
+    margin-top: 49px;
+    padding: 50px 0 29px;
+}
+
+.about__inner {
+    display: flex;
+}
+
+.about-media {
+    position: relative;
+    width: 52%;
+    margin-top: 13px;
+}
+
+.about__thumb {
+    display: flex;
+    column-gap: 21px;
+}
+
+.about__img {
+    width: 284px;
+    height: 480px;
+    object-fit: cover;
+    border-radius: 999px;
+    box-shadow: 0 4px 234px 11px rgba(59, 137, 71, 0.25);
+}
+
+.about__img:first-child {
+    margin-top: 90px;
+}
+
+.about__flower-branch,
+.about__flower {
+    position: absolute;
+}
+
+.about__flower-branch {
+    rotate: 12.645deg;
+    left: 48px;
+    top: 8px;
+}
+
+.about__flower {
+    transform: rotate(176.985deg);
+    left: 49px;
+    top: -37px;
+    z-index: 1;
+}
+
+/* Summary */
+.about-summary {
+    position: absolute;
+    right: -9px;
+    bottom: 8px;
+    font-family: var(--font-public-sans);
+    width: 14.3rem;
+    height: 14.4rem;
+    padding: 19px 17px;
+    border-radius: 0.8rem;
+    background: #fff;
+    box-shadow: 0 7px 54px 0 rgba(154, 154, 154, 0.25);
+}
+
+.about__content {
+    width: 98px;
+    margin: 0 auto;
+}
+
+.about-summary__title {
+    color: var(--Primary-color-black, #152427);
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.4rem;
+}
+
+.about-summary__avatar {
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+.about-summary__total {
+    margin-top: 6px;
+    color: var(--text-color-black-gray, #575d5e);
+    font-size: 1rem;
+    line-height: 1.4rem;
+}
+
+.about-summary__percent {
+    margin-top: 10px;
+    color: var(--Primary-color-black, #152427);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.about__bar {
+    margin-top: 3px;
+    width: 9.6rem;
+    height: 0.2rem;
+    border-radius: 999px;
+    background: #eaeaea;
+}
+
+.about__progress {
+    height: 100%;
+    width: 40%;
+    border-radius: 999px;
+    background: #83a17d;
+}
+
+.about-summary__loading {
+    margin-top: 3px;
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+    width: 41px;
+    margin-left: auto;
+}
+
+.about__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3px;
+    width: 11px;
+    height: 11px;
+    border-radius: 50%;
+    background: #eaeaea;
+}
+
+.about__circle {
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.about-summary__row {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.about-summary__team {
+    color: #152427;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.4rem;
+}
+
+.about-summary__list {
+    margin-left: auto;
+}
+
+.about-summary__thumb {
+    display: flex;
+}
+
+.about-summary__avatar {
+    margin-left: -6px;
+    width: 16px;
+    height: 16px;
+    object-fit: cover;
+    border: 1px solid #fff;
+    border-radius: 50%;
+}
+
+/* About content */
+.about-content {
+    width: 42.5%;
+    font-family: var(--font-poppins);
+    margin-left: auto;
+}
+
+.about-heading {
+    margin-top: 20px;
+}
+
+.about-heading::after {
+    content: none;
+}
+
+.about-content__desc {
+    margin-top: 11px;
+    color: var(--text-color-light-gray, #7d8188);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 2.6rem;
+    margin-bottom: 38px;
+}
+
+.about-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #83a17d;
+}
+
+.about-row:last-child {
+    margin-top: 36px;
+}
+
+.about-row__percent {
+    margin-right: 24px;
+    color: #152427;
+    font-size: 4.2rem;
+    font-weight: 600;
+    line-height: 5.2rem;
+}
+
+.about-row__desc {
+    width: 364px;
+    color: #7d8188;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2.4rem;
+}
+
+/* ============= Process ============= */
