@@ -245,29 +245,83 @@ a {
     margin-top: 77px;
 }
 
-.hero__flower {
+.hero__flower,
+.hero__flower-branch,
+.hero__flower-bot,
+.hero__flower-branch-bot {
     position: absolute;
+}
+
+.hero__flower {
     z-index: 1;
     top: -19.4px;
     left: 259.9px;
 }
 
 .hero__flower-branch {
-    position: absolute;
     top: -32.1px;
     left: 297px;
 }
 
 .hero__flower-bot {
-    position: absolute;
     z-index: 1;
     bottom: -16px;
     right: 26.1px;
 }
 
 .hero__flower-branch-bot {
-    position: absolute;
     top: 229px;
     right: 70.6px;
     rotate: 175.95deg;
+}
+
+/* ============= Brand ============= */
+.brand {
+    margin-top: 42px;
+    font-family: var(--font-poppins);
+}
+.brand__inner {
+    padding: 76px 122px;
+    border-radius: 999px;
+    background: var(--secondary-color);
+}
+
+.brand__list {
+    display: flex;
+    justify-content: space-between;
+    width: 897px;
+    margin: 0 auto;
+}
+
+.brand__item {
+    display: flex;
+    align-items: center;
+    color: var(--primary-color);
+}
+
+.brand__google {
+    font-size: 3.1rem;
+    font-weight: 500;
+}
+
+.brand__slack {
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-left: 3px;
+}
+
+.brand__agworld {
+    font-size: 2.6rem;
+    margin-left: 13px;
+}
+
+.brand__riotinto {
+    font-size: 2.3rem;
+    font-family: "Sonsie One", system-ui;
+}
+
+.brand__heroku {
+    font-size: 1.9rem;
+    font-weight: 600;
+    margin-left: 10px;
 }
